@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/25/user/583917).
-* Наставник: `Александр Логинов-Солоницын`.
+* Студент: [Dmitrii](https://up.htmlacademy.ru/htmlcss/25/user/583917).
+* Наставник: [Александр Логинов-Солоницын](https://up.htmlacademy.ru/htmlcss/25/user/992473).
 
 ---
 
