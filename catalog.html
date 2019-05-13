@@ -5,33 +5,35 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-<header>
-  <nav>
-    <ul class="nav_list">
-      <li class="nav_item">
+<header class="main-header">
+  <nav class="main-nav">
+    <ul class="nav-list">
+      <li class="nav-item">
         <a href="index.html">информация</a>
       </li>
-      <li class="nav_item">
+      <li class="nav-item">
         <a href="media.html">фото и видео</a>
       </li>
-      <li class="nav_item">
+      <li>
+        <div class="logo">
+          <a href="#"><img src="img/logo.jpg" alt="logo"  width="140px" height="72px"/></a>
+        </div>
+      </li>
+      <li class="nav-item">
         <a href="map.html">карта штата</a>
       </li>
-      <li class="nav_item">
-        <a href=" ">гостиницы</a>
+      <li class="nav-item">
+        <a href="#">гостиницы</a>
       </li>
     </ul>
   </nav>
-  <div class="logo">
-      <img src="img/logo.jpg" />
-  </div>
 </header>
 <main>
   <h1 class="hidden">sedona_catalog</h1>
-  <section class="list_items">
-    <section class="item">
+  <ul class="list-items">
+    <li class="item">
       <h2>Amara Resort & Spa</h2>
-      <img src="img/hotel1.img" width="135px" height="90px" alt="foto_Amara Resort end Spa" />
+      <img src="img/hotel1.img" width="135px" height="90px" alt="foto-Amara Resort end Spa" />
   <p class="text-item">
     Гостиница
   </p>
@@ -40,38 +42,14 @@
   </p>
   <div class="stars">
   <button type="button" name="detail" class="detail" id="detail">Подробнее</button>
-  <button type="button" name="init_form_booking_list_items" class="init_form_booking init_form_booking_list_items" id="init_form_booking">Забронировать</button>
-  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  	 width="18px" height="17px" viewBox="0 0 18 17" enable-background="new 0 0 18 17" xml:space="preserve">
-  <polygon fill="#81B3D2" points="9.002,0 11.128,6.494 18.005,6.494 12.441,10.506 14.566,17 9.002,12.987 3.438,17 5.564,10.506
-  	0,6.494 6.878,6.494 "/>
-  </svg>
-  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  	 width="18px" height="17px" viewBox="0 0 18 17" enable-background="new 0 0 18 17" xml:space="preserve">
-  <polygon fill="#81B3D2" points="9.002,0 11.128,6.494 18.005,6.494 12.441,10.506 14.566,17 9.002,12.987 3.438,17 5.564,10.506
-  	0,6.494 6.878,6.494 "/>
-  </svg>
-  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  	 width="18px" height="17px" viewBox="0 0 18 17" enable-background="new 0 0 18 17" xml:space="preserve">
-  <polygon fill="#81B3D2" points="9.002,0 11.128,6.494 18.005,6.494 12.441,10.506 14.566,17 9.002,12.987 3.438,17 5.564,10.506
-  	0,6.494 6.878,6.494 "/>
-  </svg>
-  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  	 width="18px" height="17px" viewBox="0 0 18 17" enable-background="new 0 0 18 17" xml:space="preserve">
-  <polygon fill="#81B3D2" points="9.002,0 11.128,6.494 18.005,6.494 12.441,10.506 14.566,17 9.002,12.987 3.438,17 5.564,10.506
-  	0,6.494 6.878,6.494 "/>
-  </svg>
-  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  	 width="18px" height="17px" viewBox="0 0 18 17" enable-background="new 0 0 18 17" xml:space="preserve">
-  <polygon fill="#81B3D2" points="9.002,0 11.128,6.494 18.005,6.494 12.441,10.506 14.566,17 9.002,12.987 3.438,17 5.564,10.506
-  	0,6.494 6.878,6.494 "/>
-  </svg>
+  <button type="button" name="init-form-booking-list-items" class="init-form-booking init-form-booking-list-items" id="init-form-booking">Забронировать</button>
+<img class="assessment" href="img/stars5.jpg" alt="assessment">
   </div>
   <span class="rating">Рейтинг: 8,5</span>
-    </section>
-    <section class="item">
+    </li>
+    <li class="item">
       <h2>Desert Quail Inn</h2>
-      <img src="img/hotel2.img" width="135px" height="90px" alt="foto_Desert Quail Inn" />
+      <img src="img/hotel2.img" width="135px" height="90px" alt="foto-Desert Quail Inn" />
   <p class="text-item">
     Мотель
   </p>
@@ -79,29 +57,15 @@
     От 3000 Р.
   </p>
   <div class="stars">
-  <button type="button" name="detail" class="detail" id="detail">Подробнее</button>
-  <button type="button" name="init_form_booking_list_items" class="init_form_booking init_form_booking_list_items" id="init_form_booking">Забронировать</button>
-  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  	 width="18px" height="17px" viewBox="0 0 18 17" enable-background="new 0 0 18 17" xml:space="preserve">
-  <polygon fill="#81B3D2" points="9.002,0 11.128,6.494 18.005,6.494 12.441,10.506 14.566,17 9.002,12.987 3.438,17 5.564,10.506
-  	0,6.494 6.878,6.494 "/>
-  </svg>
-  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  	 width="18px" height="17px" viewBox="0 0 18 17" enable-background="new 0 0 18 17" xml:space="preserve">
-  <polygon fill="#81B3D2" points="9.002,0 11.128,6.494 18.005,6.494 12.441,10.506 14.566,17 9.002,12.987 3.438,17 5.564,10.506
-  	0,6.494 6.878,6.494 "/>
-  </svg>
-  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  	 width="18px" height="17px" viewBox="0 0 18 17" enable-background="new 0 0 18 17" xml:space="preserve">
-  <polygon fill="#81B3D2" points="9.002,0 11.128,6.494 18.005,6.494 12.441,10.506 14.566,17 9.002,12.987 3.438,17 5.564,10.506
-  	0,6.494 6.878,6.494 "/>
-  </svg>
+    <button type="button" name="detail" class="detail" id="detail">Подробнее</button>
+    <button type="button" name="init-form-booking-list-items" class="init-form-booking init-form-booking-list-items" id="init-form-booking">Забронировать</button>
+    <img class="assessment" href="img/stars3.jpg" alt="assessment">
   </div>
   <span class="rating">Рейтинг: 8,9</span>
-    </section>
-    <section class="item">
+    </li>
+    <li class="item">
       <h2>Villas at Poco Diablo</h2>
-      <img src="img/hotel3.img" width="135px" height="90px" alt="foto_Villas at Poco Diablo" />
+      <img src="img/hotel3.img" width="135px" height="90px" alt="foto-Villas at Poco Diablo" />
   <p class="text-item">
     Апартаменты
   </p>
@@ -109,22 +73,13 @@
     От 2000 Р.
   </p>
   <div class="stars">
-  <button type="button" name="detail" class="detail" id="detail">Подробнее</button>
-  <button type="button" name="init_form_booking_list_items" class="init_form_booking init_form_booking_list_items" id="init_form_booking">Забронировать</button>
-  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  	 width="18px" height="17px" viewBox="0 0 18 17" enable-background="new 0 0 18 17" xml:space="preserve">
-  <polygon fill="#81B3D2" points="9.002,0 11.128,6.494 18.005,6.494 12.441,10.506 14.566,17 9.002,12.987 3.438,17 5.564,10.506
-  	0,6.494 6.878,6.494 "/>
-  </svg>
-  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  	 width="18px" height="17px" viewBox="0 0 18 17" enable-background="new 0 0 18 17" xml:space="preserve">
-  <polygon fill="#81B3D2" points="9.002,0 11.128,6.494 18.005,6.494 12.441,10.506 14.566,17 9.002,12.987 3.438,17 5.564,10.506
-  	0,6.494 6.878,6.494 "/>
-  </svg>
+    <button type="button" name="detail" class="detail" id="detail">Подробнее</button>
+    <button type="button" name="init-form-booking-list-items" class="init-form-booking init-form-booking-list-items" id="init-form-booking">Забронировать</button>
+  <img class="assessment" href="img/stars2.jpg" alt="assessment">
   </div>
   <span class="rating">Рейтинг: 9,2</span>
-    </section>
-  </section>
+</li>
+  </ul>
 </main>
 <footer>
   <span class="hashtag">#visitSEDONA</span>
@@ -139,13 +94,10 @@
       <img  src="img/social-utub.jpg" width="46px" height="48px" alt="social-btn-utub">
     </li>
   </ul>
-  <div>
-    <p>
+    <span>
       Website by
-    </p>
+    </span>
     <img src="img/social-utub.jpg" width="115px" height="41px" alt="htmlacademy" />
 </footer>
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
   </body>
 </html>

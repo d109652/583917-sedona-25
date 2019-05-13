@@ -5,19 +5,24 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-<header>
-  <nav>
-<ul class="nav_list">
-  <li class="nav_item">
-    <a href=" ">информация</a>
+<header class="main-header">
+  <nav class="main-nav">
+<ul class="nav-list">
+  <li class="nav-item">
+    <a href="#">информация</a>
   </li>
-  <li class="nav_item">
+  <li class="nav-item">
     <a href="media.html">фото и видео</a>
   </li>
-  <li class="nav_item">
+  <li>
+    <div class="logo">
+      <a href="#"><img src="img/logo.jpg" alt="logo"  width="140px" height="72px"/></a>
+    </div>
+  </li>
+  <li class="nav-item">
     <a href="map.html">карта штата</a>
   </li>
-  <li class="nav_item">
+  <li class="nav-item">
     <a href="catalog.html">гостиницы</a>
   </li>
 </ul>
@@ -28,9 +33,9 @@
 </header>
 <main>
   <h1 class="hidden">Сайт городка Sedona</h1>
-  <section class="welcome_sedona">
+  <div class="welcome-sedona">
     <img src="img/welcome.jpg" width="459px" height="353px" />
-  </section>
+  </div>
 <article class="slogan">
   <h2 class="hidden">Лозунг про городок</h2>
 <p>
@@ -46,13 +51,14 @@
 
 </section>
 <section class="booking">
+  <h2 class="hidden"><Бронирование</h2>
   <p>
     Заинтересовались?
   </p>
   <p>
     Укажите предполагаемые даты поездки, <br /> и мы покажем вам лучшие предложения гостиниц в седоне
   </p>
-<button type="button" name="init_form_booking" class="init_form_booking" id="init_form_booking">
+<button type="button" name="init-form-booking" class="init-form-booking" id="init-form-booking">
 ПОИСК ГОСТИНИЦЫ В седоне
 </button>
 </section>
@@ -70,14 +76,10 @@
       <img  src="img/social-utub.jpg" width="46px" height="48px" alt="social-btn-utub">
     </li>
   </ul>
-  <div>
-    <p>
+    <span>
       Website by
-    </p>
+    </span>
     <img src="img/social-utub.jpg" width="115px" height="41px" alt="htmlacademy" />
 </footer>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
   </body>
 </html>
