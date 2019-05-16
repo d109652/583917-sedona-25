@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <style>
+  BODY {background:#e2e2e2;}
+</style>
   </head>
   <body>
 <header class="main-header">
@@ -16,7 +19,7 @@
   </li>
   <li>
     <div class="logo">
-      <a href="#"><img src="img/logo.jpg" alt="logo-index"  width="140px" height="72px"/></a>
+      <a href="#"><img src="img/logo.png" alt="logo-index"  width="140" height="72"/></a>
     </div>
   </li>
   <li class="nav-item">
@@ -27,15 +30,17 @@
   </li>
 </ul>
   </nav>
-  <div class="logo">
-      <img src="img/logo.jpg"  width="140px" height="72px" />
-  </div>
 </header>
 <main>
+
   <h1 class="hidden">Сайт городка Sedona</h1>
   <div class="welcome-sedona">
-    <img src="img/welcome.jpg" width="459px" height="353px" />
-  </div
+    <img src="img/welcome.svg" width="459" height="353" />
+  </div>
+  <div class="welcome-sedona">
+    <img src="img/polygon.svg" width="1021" height="59" />
+  </div>
+
 <p>
   Седона — небольшой городок в Аризоне, заслуживающий большего!
 </p>
@@ -57,15 +62,15 @@
 <button type="button" name="init-form-booking" class="init-form-booking" id="init-form-booking">
 ПОИСК ГОСТИНИЦЫ В седоне
 </button>
-<form class="form-booking">
+<form class="form-booking" method="post">
 <p class="form-booking-item">
-  <span class="form-booking-item-name">Дата заезда:</span>
-  <span class="form-booking-item-date">24 апреля 2017</span>
+  <lable class="form-booking-item-name" for="datein">Дата заезда:</lable>
 </p>
+  <input type="text" class="form-booking-item-date" name="datein" placeholder="24 апреля 2017">
 <p class="form-booking-item">
   <span class="form-booking-item-name">Дата выезда:</span>
-  <span class="form-booking-item-date">4 июля 2017</span>
 </p>
+  <input type="text" class="form-booking-item-date" value="4 июля 2017">
 <p class="form-booking-item">
   <span class="form-booking-item-name">Взрослые:</span>
   <span class="form-booking-item-count">2</span>
@@ -77,25 +82,29 @@
 <input type="submit" value="найти" />
 </form>
 </section>
+<section>
+  <h2 class="hidden">Карта</h2>
+  <img src="img/map.jpg" width="1200" height="593" alt="map">
+
 </main>
 <footer>
-  <span class="hashtag">#visitSEDONA</span>
+  <span class="hashtag">#visitsedona</span>
   <ul class="social-block">
     <li class="social-btn social-btn-tw">
-      <img src="img/social-tw.jpg" width="46px" height="48px" alt="social-btn-tw">
+      <img src="img/t.svg" width="17" height="15" alt="social-btn-tw">
     </li>
     <li class="social-btn social-btn-fb">
-      <img  src="img/social-fb.jpg" width="46px" height="48px" alt="social-btn-fb">
+      <img  src="img/fb-icon.svg" width="12" height="22" alt="social-btn-fb">
     </li>
     <li class="social-btn social-btn-utub">
-      <img  src="img/social-utub.jpg" width="46px" height="48px" alt="social-btn-utub">
+      <img  src="img/youtube.svg" width="20" height="16" alt="social-btn-utub">
     </li>
   </ul>
   <p class="site-creator">
     <span class="Websiteby">
       Website by
     </span>
-    <img src="img/htmlacademy.jpg" width="115px" height="41px" alt="htmlacademy" />
+    <img src="img/logo_name.svg" width="115" height="41" alt="htmlacademy" />
   </p>
 </footer>
   </body>
