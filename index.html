@@ -19,7 +19,7 @@
   </li>
   <li>
     <div class="logo">
-      <a href="#"><img src="img/logo.png" alt="logo-index"  width="140" height="72"/></a>
+      <a href="#"><img src="img/logo.png" alt="Логотип сайта о городке Седона"  width="140" height="72"/></a>
     </div>
   </li>
   <li class="nav-item">
@@ -31,80 +31,83 @@
 </ul>
   </nav>
 </header>
-<main>
 
-  <h1 class="hidden">Сайт городка Sedona</h1>
+<main>
+  <h1 class="visually-hidden">Сайт городка Sedona</h1>
   <div class="welcome-sedona">
     <img src="img/welcome.svg" width="459" height="353" />
   </div>
   <div class="welcome-sedona">
     <img src="img/polygon.svg" width="1021" height="59" />
   </div>
-
-<p>
+  <p>
   Седона — небольшой городок в Аризоне, заслуживающий большего!
-</p>
-<section class="advantages">
-  <h2 class="hidden">Преимущества городка Седона</h2>
-  <p>
+  </p>
+  <section class="advantages">
+    <h2 class="visually-hidden">Преимущества городка Седона</h2>
+    <p>
   Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-  </p>
-
-</section>
-<section class="booking">
-  <h2 class="hidden">Бронирование</h2>
-  <p>
-    Заинтересовались?
-  </p>
-  <p>
-    Укажите предполагаемые даты поездки, <br /> и мы покажем вам лучшие предложения гостиниц в седоне
-  </p>
-<button type="button" name="init-form-booking" class="init-form-booking" id="init-form-booking">
-ПОИСК ГОСТИНИЦЫ В седоне
-</button>
-<form class="form-booking" method="post">
-<p class="form-booking-item">
-  <lable class="form-booking-item-name" for="datein">Дата заезда:</lable>
-</p>
-  <input type="text" class="form-booking-item-date" name="datein" placeholder="24 апреля 2017">
-<p class="form-booking-item">
-  <span class="form-booking-item-name">Дата выезда:</span>
-</p>
-  <input type="text" class="form-booking-item-date" value="4 июля 2017">
-<p class="form-booking-item">
-  <span class="form-booking-item-name">Взрослые:</span>
-  <span class="form-booking-item-count">2</span>
-</p>
-<p class="form-booking-item">
-  <span class="form-booking-item-name">Дети:</span>
-  <span class="form-booking-item-count">0</span>
-</p>
-<input type="submit" value="найти" />
-</form>
-</section>
-<section>
-  <h2 class="hidden">Карта</h2>
-  <img src="img/map.jpg" width="1200" height="593" alt="map">
-
+    </p>
+  </section>
+  <section class="booking">
+    <h2 class="visually-hidden">Бронирование</h2>
+    <p>
+      Заинтересовались?
+    </p>
+    <p>
+      Укажите предполагаемые даты поездки, <br /> и мы покажем вам лучшие предложения гостиниц в седоне
+    </p>
+  <button type="button" name="init-form-booking" class="init-form-booking" id="init-form-booking">
+  поиск гостиницы в седоне
+  </button>
+    <form class="form-booking" action="https://echo.htmlacademy.ru" method="get">
+      <p class="form-booking-item">
+        <label class="form-booking-item-name" for="datein">Дата заезда:</label>
+        <input type="text" class="form-booking-item-date" name="datein" id="datein" placeholder="24 апреля 2017">
+      </p>
+      <p class="form-booking-item">
+        <label class="form-booking-item-name" for="dateout">Дата выезда:</label>
+        <input type="text" class="form-booking-item-date" name="dateout" id="dateout" value="4 июля 2017">
+      </p>
+      <p class="form-booking-item-adult-count">
+        <label for="adult-count" class="form-booking-item-name">Взрослые:</label>
+        <button class="form-booking-button" type="button" aria-label="меньше">-</button>
+        <input type="text" name="adult-count" id="adult-count"  class="form-booking-item-count" value="2" aria-label="введите количество взрослых" />
+        <button class="form-booking-button" type="button" aria-label="больше">+</button>
+      </p>
+      <p class="form-booking-item-children-count">
+        <label for="children-count" class="form-booking-item-name">Дети:</label>
+        <button class="form-booking-button" type="button" aria-label="меньше">-</button>
+        <input type="text" name="children-count" id="children-count" class="form-booking-item-count" value="0"  aria-label="введите количество детей" />
+        <button class="form-booking-button" type="button" aria-label="больше">+</button>
+      </p>
+      <button type="submit" aria-label="кнопка запуска поиска отеля по введённым параметрам">найти</button>
+    </form>
+  </section>
+  <section>
+    <h2 class="visually-hidden">Карта</h2>
+    <img src="img/map.jpg" width="1200" height="593" alt="Карта местности с обозначением местонахождения города">
+  </section>
 </main>
+
 <footer>
   <span class="hashtag">#visitsedona</span>
-  <ul class="social-block">
-    <li class="social-btn social-btn-tw">
-      <img src="img/t.svg" width="17" height="15" alt="social-btn-tw">
-    </li>
-    <li class="social-btn social-btn-fb">
-      <img  src="img/fb-icon.svg" width="12" height="22" alt="social-btn-fb">
-    </li>
-    <li class="social-btn social-btn-utub">
-      <img  src="img/youtube.svg" width="20" height="16" alt="social-btn-utub">
-    </li>
-  </ul>
-  <p class="site-creator">
+    <ul class="social-block">
+      <li class="social-btn social-btn-tw">
+        <a href="#" aria-label="твиттер седоны"><img src="img/t.svg" width="17" height="15" alt=""></a>
+      </li>
+      <li class="social-btn social-btn-fb">
+        <a href="#" aria-label="седона в фэйсбуке"><img  src="img/fb-icon.svg" width="12" height="22" alt=""></a>
+      </li>
+      <li class="social-btn social-btn-utub">
+        <a href="#" aria-label="седона в ютубе"><img  src="img/youtube.svg" width="20" height="16" alt=""></a>
+      </li>
+    </ul>
+    <p class="site-creator">
     <span class="Websiteby">
       Website by
     </span>
-    <img src="img/logo_name.svg" width="115" height="41" alt="htmlacademy" />
+    <img lang="en" src="img/logo_name.svg" width="115" height="41" alt="htmlacademy" />
   </p>
 </footer>
   </body>
