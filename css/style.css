@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-image: url("../img/background-photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-nav {
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list a {
+  color: #000000;
+}
+.nav-list a:hover,
+.nav-list a:focus {
+  color: #81b3d2;
+}
+
+.nav-list a:active {
+color: #cacaca;
+}
+
+.welcome-sedona img {
+  padding-left: 410px;
+  padding-top: 132px;
+}
+
+.polygon-sedona img {
+  padding-left: 39px;
+  padding-top: 506px;
+}
