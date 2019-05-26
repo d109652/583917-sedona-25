@@ -8,9 +8,6 @@ body {
   text-transform: uppercase;
 
   background-color: #ffffff;
-  background-image: url("../img/background-photo.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 
 a {
@@ -18,6 +15,7 @@ a {
 }
 
 .button {
+  font: inherit;
   border: 0;
 }
 .visually-hidden {
@@ -48,12 +46,11 @@ a {
 }
 
 .nav-list a:active {
-color: #cacaca;
+  color: #cacaca;
 }
 
 .welcome-sedona img {
-  padding-left: 410px;
-  padding-top: 132px;
+
 }
 
 .polygon-sedona img {
@@ -70,7 +67,7 @@ color: #cacaca;
 }
 
 .reasons {
-    text-align: center;
+  text-align: center;
 }
 
 .interest {
@@ -81,8 +78,8 @@ color: #cacaca;
 }
 
 .offer {
-    text-align: center;
-    line-height: 24px;
+  text-align: center;
+  line-height: 24px;
 }
 
 .init-form-booking {
@@ -103,14 +100,17 @@ color: #cacaca;
   padding: 35px 140px;
   background-color: #766357;
   color: #ffffff;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
 }
 .button-init-form-booking:hover {
-background-color: #604e43;
+  background-color: #604e43;
 }
 
 .button-init-form-booking:active {
-background-color: #503e33;
-color: #928a85;
+  background-color: #503e33;
+  color: #928a85;
 }
 
 .form-booking-item-name {
@@ -140,17 +140,17 @@ color: #928a85;
   color: #ffffff;
 }
 .link-detail {
-padding: 8px 17px;
-background-color: #81b3d2;
+  padding: 8px 17px;
+  background-color: #81b3d2;
 }
 
 .link-detail:hover {
-background-color: #669ec0;
+  background-color: #669ec0;
 }
 
 .link-detail:active {
-background-color: #5496bd;
-color: #94b9d2;
+  background-color: #5496bd;
+  color: #94b9d2;
 }
 
 .link-tobook {
