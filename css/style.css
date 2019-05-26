@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+  border: 0;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.main-nav {
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list a {
+  color: #000000;
+}
+.nav-list a:hover,
+.nav-list a:focus {
+  color: #81b3d2;
+}
+
+.nav-list a:active {
+  color: #cacaca;
+}
+
+.welcome-sedona img {
+
+}
+
+.polygon-sedona img {
+  padding-left: 39px;
+  padding-top: 506px;
+}
+
+.sedona-slogan,
+.button {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+}
+
+.reasons {
+  text-align: center;
+}
+
+.interest {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+  text-align: center;
+}
+
+.offer {
+  text-align: center;
+  line-height: 24px;
+}
+
+.init-form-booking {
+  margin-left: 356px;
+  weight: 568px;
+  height: 86px;
+}
+
+.form-booking {
+  display: none;
+  weight: 568px;
+  height: 395px;
+  margin-left: 356px;
+}
+
+.button-init-form-booking {
+  margin-left: 356px;
+  padding: 35px 140px;
+  background-color: #766357;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.button-init-form-booking:hover {
+  background-color: #604e43;
+}
+
+.button-init-form-booking:active {
+  background-color: #503e33;
+  color: #928a85;
+}
+
+.form-booking-item-name {
+  font-weight:bold;
+}
+
+.hashtag {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.Websiteby {
+
+}
+
+.logo_name:hover {
+  background-color: #81b3d2;
+  mask-image: url('../img/logo_name.svg')
+}
+
+.catalog-item-action {
+  list-style: none;
+}
+
+.catalog-item-action a{
+  color: #ffffff;
+}
+.link-detail {
+  padding: 8px 17px;
+  background-color: #81b3d2;
+}
+
+.link-detail:hover {
+  background-color: #669ec0;
+}
+
+.link-detail:active {
+  background-color: #5496bd;
+  color: #94b9d2;
+}
+
+.link-tobook {
+  padding: 8px 17px;
+  background-color: #766357;
+}
+
+.link-tobook:hover {
+  background-color: #604e43;
+}
+
+.link-tobook:active {
+  background-color: #503e33;
+  color: #928a85;
+}
