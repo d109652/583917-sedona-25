@@ -26,7 +26,14 @@ a {
   margin: -1px;
 }
 
+.main-header {
+  display: flex;
+  justify-content: center;
+}
+
 .main-nav {
+  width: 1200px;
+  margin: 0px auto;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
@@ -34,12 +41,18 @@ a {
 }
 
 .nav-list {
+  display: flex;
+  justify-content: space-around;
+  margin:0;
+  padding:0;
   list-style: none;
 }
 
 .nav-list a {
   color: #000000;
+
 }
+
 .nav-list a:hover,
 .nav-list a:focus {
   color: #81b3d2;
@@ -49,13 +62,35 @@ a {
   color: #cacaca;
 }
 
+.nav-item {
+  padding-top: 20px;
+}
+
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.welcome-sedona {
+  margin-top: 0px;
+}
+
 .welcome-sedona img {
 
 }
 
+.polygon-sedona {
+  margin-top: -50px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
 .polygon-sedona img {
-  padding-left: 39px;
-  padding-top: 506px;
+
 }
 
 .sedona-slogan,
@@ -117,14 +152,32 @@ a {
   font-weight:bold;
 }
 
+footer {
+  margin-top: 35px;
+}
+
+.footer-box {
+  display: flex;
+}
+
 .hashtag {
+  width: 140px;
+  margin-left: 130px;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
 }
 
-.Websiteby {
+.social-block {
+  height:50px;
+  margin-left: 255px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.site-creator {
+margin-right: 100px;
+margin-left: auto;
 }
 
 .logo_name:hover {
@@ -132,13 +185,43 @@ a {
   mask-image: url('../img/logo_name.svg')
 }
 
+.catalog-item {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.catalog-item-image {
+  order:-1;
+  margin-left: 70px;
+}
+
+.catalog-item-flexitem1 {
+  display: flex;
+  flex-direction:column;
+  margin-left: 30px;
+}
+
+.catalog-item-flexitem2 {
+  margin-left: auto;
+  margin-right: 70px;
+}
+
+.catalog-item-actions {
+
+}
+
 .catalog-item-action {
+  display: inline-block;
   list-style: none;
+  padding-left: 0;
+
 }
 
 .catalog-item-action a{
   color: #ffffff;
 }
+
 .link-detail {
   padding: 8px 17px;
   background-color: #81b3d2;
@@ -165,4 +248,8 @@ a {
 .link-tobook:active {
   background-color: #503e33;
   color: #928a85;
+}
+
+.stars {
+  margin-bottom: 45px;
 }
