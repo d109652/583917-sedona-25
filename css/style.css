@@ -8,7 +8,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -116,6 +115,10 @@ margin-top: -59px;
   font-weight: bold;
   line-height: 26px;
   text-align: center;
+}
+
+.button {
+  text-transform: uppercase;
 }
 
 .reasons {
@@ -243,12 +246,15 @@ margin-left: auto;
 }
 
 .catalog-item-price {
+display: flex;
+
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-.catalog-item-price-span {
-   padding-right: 40px;
+.catalog-item-price-bilding {
+   min-width: 110px;
+   margin-right: 7px;
 }
 
 .catalog-item-flexitem2 {
@@ -272,7 +278,7 @@ margin-left: auto;
 }
 
 .link-detail {
-  margin-right: 6px;
+  margin-right: 3px;
   padding: 8px 17px;
   background-color: #81b3d2;
 }
@@ -302,4 +308,12 @@ margin-left: auto;
 
 .stars {
   margin-bottom: 45px;
+}
+
+.rating {
+  background-color: #f2f2f2;
+  padding-left: 16px;
+  padding-right: 13px;
+  padding-top: 8px;
+  padding-bottom: 9px;
 }
