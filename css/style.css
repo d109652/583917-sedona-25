@@ -238,6 +238,7 @@ margin-left: auto;
 }
 
 .catalog-item-header {
+  display: block;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -257,6 +258,9 @@ display: flex;
 .catalog-item-flexitem2 {
   margin-left: auto;
   margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .catalog-item-actions {
@@ -301,10 +305,6 @@ display: flex;
 .link-tobook:active {
   background-color: #503e33;
   color: #928a85;
-}
-
-.stars {
-  margin-bottom: 45px;
 }
 
 .rating {
