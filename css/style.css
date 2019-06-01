@@ -98,15 +98,12 @@ a {
 
 .welcome-sedona {
   margin-top: 0px;
-}
-
-.welcome-sedona img {
-display: block;
+  display: block;
 }
 
 .polygon-sedona {
 display: block;
-margin-top: -59px;
+margin-top: -58px;
 }
 
 .sedona-slogan,
