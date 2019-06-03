@@ -244,12 +244,15 @@ flex-direction: row;
 
 }
 
+/* sedona-footer*/
+
 footer {
   margin-top: 35px;
 }
 
 .footer-box {
   display: flex;
+  align-items: center;
 }
 
 .hashtag {
@@ -261,6 +264,7 @@ footer {
 }
 
 .social-block {
+  padding: 0;
   height: 50px;
   min-width: 152px;
   margin-left: 255px;
@@ -270,31 +274,46 @@ footer {
 }
 
 .social-btn {
-  
   display: block;
 }
 
 .social-btn a {
-  display: block;
+  display: flex;
   height: 48px;
   width: 47px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-btn:active > a img {
+  opacity: 0.35;
 }
 
 .site-creator {
-margin-right: 100px;
-margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+  margin-left: auto;
 }
 
-.logo-name {
+.Websiteby {
+  margin-right: 6px;
+}
+.site-creator-logo {
   width: 115px;
   height: 41px;
-  mask-image: url('../img/logo_name.svg');
-  background-color: #000000;
-}
-.logo-name:hover {
-    background-color: #81b3d2;
 }
 
+.site-creator-logo-link:hover path {
+  fill: #81b3d2;
+}
+
+.site-creator-logo-link:active path {
+  fill: #bdbbbc;
+}
+
+/* sedona-hotels*/
 .catalog-item {
   display: flex;
   padding-top: 30px;
