@@ -195,12 +195,12 @@ margin-top: -58px;
 
 .button-init-form-booking:hover ~ .form-booking {
   visibility: visible;
-  transform: translateY(-100%);
+  transform: translateY(0);
 }
 
 .button-init-form-booking:active ~ .form-booking {
   visibility: visible;
-  transform: translateY(-100%);
+  transform: translateY(0);
 }
 
 
