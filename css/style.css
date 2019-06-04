@@ -174,15 +174,16 @@ margin-top: -58px;
 
 .form-booking {
   position:absolute;
-  top: 0;
+  top: 0px;
   left: 0;
   width: 100%;
-  transition: all 0.3s linear;
-  transform: translateY(-100%);
+  /*transition: all 0.3s linear;
+  transform: translateY(-100%);*/
   visibility: hidden;
   width: 568px;
   height: 395px;
   margin-left: 356px;
+  background-color: white;
 }
 
 .button-init-form-booking {
@@ -192,15 +193,15 @@ margin-top: -58px;
   font-weight: 700;
   line-height: 26px;
 }
-
-.button-init-form-booking:hover ~ .form-booking {
-  visibility: visible;
+/*
+.button-init-form-booking:hover .form-booking {
+  visibility:hidden;
   transform: translateY(0);
 }
-
-.button-init-form-booking:active ~ .form-booking {
+*/
+.button-init-form-booking:active .form-booking {
   visibility: visible;
-  transform: translateY(0);
+/*   transform: translateY(0);*/
 }
 
 
@@ -211,21 +212,19 @@ margin-top: -58px;
   flex-wrap: wrap;
   justify-content: spase-around;
   align-items: stretch;
-  margin: auto;
-  padding: 55px;
+  margin: 40px 55px;
 }
 
 .form-booking-item input {
   background-color: #f2f2f2;
   height: 38px;
   border: 0;
-  margin-left: 21px;
+
 }
 
 .form-booking-item-date {
   min-width: 346px;
-  height: 38px;
-  border: 0;
+  margin-left: 18px;
   margin-bottom: 0;
   padding-right: 40px;
   background-image: url('../img/calendar.svg');
@@ -233,9 +232,17 @@ margin-top: -58px;
   background-position: center right 15px;
 }
 
+.form-booking-item-dateout {
+  margin-left: 14px;
+
+}
+
 .piple-count {
-display: flex;
-flex-direction: row;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 55px;
 }
 
 .piple-count div {
