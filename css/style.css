@@ -167,11 +167,20 @@ margin-top: -58px;
   height: 86px;
 }
 
+
+.form-booking-wrapper {
+  position: relative;
+}
+
 .form-booking {
-  position:relative;
-  z-index: 1000;
-/*  display: none; */
-  weight: 568px;
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s linear;
+  transform: translateY(-100%);
+  visibility: hidden;
+  width: 568px;
   height: 395px;
   margin-left: 356px;
 }
@@ -185,12 +194,16 @@ margin-top: -58px;
 }
 
 .button-init-form-booking:hover ~ .form-booking {
-  display: block;
+  visibility: visible;
+  transform: translateY(-100%);
 }
 
 .button-init-form-booking:active ~ .form-booking {
-    display: block;
+  visibility: visible;
+  transform: translateY(-100%);
 }
+
+
 
 .form-booking-flex {
   display: flex;
@@ -203,10 +216,10 @@ margin-top: -58px;
 }
 
 .form-booking-item input {
-    background-color: #f2f2f2;
-    height: 38px;
-    border: 0;
-    margin-left: 21px;
+  background-color: #f2f2f2;
+  height: 38px;
+  border: 0;
+  margin-left: 21px;
 }
 
 .form-booking-item-date {
@@ -218,7 +231,6 @@ margin-top: -58px;
   background-image: url('../img/calendar.svg');
   background-repeat: no-repeat;
   background-position: center right 15px;
-
 }
 
 .piple-count {
