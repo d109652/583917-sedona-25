@@ -162,6 +162,8 @@ margin-top: -58px;
 }
 
 .init-form-booking {
+  position: relative;
+  z-index: 100;
   margin-left: 356px;
   weight: 568px;
   height: 86px;
@@ -169,16 +171,18 @@ margin-top: -58px;
 
 .form-booking-wrapper {
   position: relative;
+  z-index: 90;
 }
 
 .form-booking {
   position:absolute;
+  z-index: -1;
   top: 0px;
   left: 0;
   width: 100%;
-  transition: all 0.3s linear;
+  transition: all 1.3s linear;
   transform: translateY(-100%);
-  visibility: hidden;
+  visibility: visible;
   width: 568px;
   height: 395px;
   margin-left: 356px;
@@ -186,7 +190,7 @@ margin-top: -58px;
 }
 
 .button-init-form-booking {
-  margin-left: 356px;
+  margin-left: 355px;
   padding: 35px 140px;
   font-size: 21px;
   font-weight: 700;
@@ -225,6 +229,15 @@ margin-top: -58px;
   background-image: url('../img/calendar.svg');
   background-repeat: no-repeat;
   background-position: center right 15px;
+}
+
+.form-booking-item-date:hover {
+  background-image: url('../img/calendar-black.svg');
+}
+
+.form-booking-item-date:active,
+.form-booking-item-date:focus {
+  background-image: url('../img/calendar-blue.svg');
 }
 
 .form-booking-item-dateout {
@@ -268,19 +281,19 @@ margin-top: -58px;
 
 .form-booking-button-minus:hover {
 background-color: #f2f2f2;
-background-image: url('../img/--blue.png');
+background-image: url('../img/--black.png');
 background-repeat: no-repeat;
 background-position: center;
-color: #81b3d2;
+color: #000000;
 }
 
 .form-booking-button-minus:active,
 .form-booking-button-minus:focus {
 background-color: #f2f2f2;
-background-image: url('../img/--black.png');
+background-image: url('../img/--blue.png');
 background-repeat: no-repeat;
 background-position: center;
-color: #000000;
+color: #81b3d2;
 }
 
 .form-booking-button-plus {
@@ -291,19 +304,19 @@ color: #000000;
 
 .form-booking-button-plus:hover {
 background-color: #f2f2f2;
-background-image: url('../img/++blue.png');
+background-image: url('../img/++black.png');
 background-repeat: no-repeat;
 background-position: center;
-color: #81b3d2;
+color: #000000;
 }
 
 .form-booking-button-plus:active,
 .form-booking-button-plus:focus {
 background-color: #f2f2f2;
-background-image: url('../img/++black.png');
+background-image: url('../img/++blue.png');
 background-repeat: no-repeat;
 background-position: center;
-color: #000000;
+color: #81b3d2;
 }
 
 
@@ -423,6 +436,24 @@ footer {
 }
 
 /* sedona-hotels*/
+
+.sort {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sorting {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.sort-start-end {
+  display: flex;
+  flex-direction: row;
+}
+
 .catalog-item {
   display: flex;
   padding-top: 30px;
