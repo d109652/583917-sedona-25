@@ -132,7 +132,9 @@ a {
 
 .polygon-sedona {
 display: block;
-margin-top: -293px;
+
+margin-top: -58px;
+margin-bottom: 58px;
 }
 
 .sedona-slogan,
@@ -146,8 +148,7 @@ margin-top: -293px;
 
 .sedona-slogan {
   display: block;
-  margin-bottom: 32px;
-  background-color: #ffffff;
+  margin-bottom: 30px;
 }
 
 .button {
@@ -156,7 +157,7 @@ margin-top: -293px;
 
 .reasons {
   text-align: center;
-    background-color: #ffffff;
+  margin-bottom: 55px;
 }
 
 .interest {
@@ -169,7 +170,6 @@ margin-top: -293px;
 .offer {
   text-align: center;
   line-height: 24px;
-    background-color: #ffffff;
 }
 
 .form-booking-wrapper {
