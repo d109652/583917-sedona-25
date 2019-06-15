@@ -92,7 +92,6 @@ a {
   align-items:center;
   min-height:56px;
   color: #000000;
-
 }
 
 .nav-list a:hover,
@@ -150,27 +149,42 @@ margin-top: -58px;
   text-transform: uppercase;
 }
 
+
+
 .reasons {
   text-align: center;
 }
 
-.interest {
+.interest {display: block;
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .offer {
+  display: block;
   text-align: center;
   line-height: 24px;
+  margin-bottom: 47px;
 }
 
+/*
 .init-form-booking {
   position: relative;
-  margin-left: 356px;
-  weight: 568px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 568px;
   height: 86px;
+}
+*/
+
+.booking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-booking-wrapper {
@@ -185,16 +199,16 @@ margin-top: -58px;
   visibility: visible;
   width: 568px;
   height: 395px;
-  margin-left: 356px;
   background-color: white;
 }
 
 .button-init-form-booking {
-  margin-left: 355px;
-  padding: 35px 140px;
+  padding: 31px 140px;
   font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 24px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button-init-form-booking:active + .form-booking-wrapper .form-booking  {
@@ -241,7 +255,6 @@ margin-top: -58px;
 
 .form-booking-item-dateout {
   margin-left: 14px;
-
 }
 
 .piple-count {
@@ -259,7 +272,6 @@ margin-top: -58px;
 .form-booking-item-count {
   width: 38px;
   text-align: center;
-
 }
 
 .form-booking-item-name {
@@ -367,8 +379,13 @@ color: blue;
 
 /* sedona-footer*/
 
-footer {
-  margin-top: 35px;
+footer {position: relative;
+  height: 120px;
+  padding-top: 20px;
+  margin-top: -126px;
+  margin-bottom: 0;
+
+  background-image: url('../img/footer-back.png');
 }
 
 .footer-box {
@@ -378,7 +395,7 @@ footer {
 
 .hashtag {
   width: 140px;
-  margin-left: 130px;
+  margin-left: 132px;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -386,9 +403,10 @@ footer {
 
 .social-block {
   padding: 0;
+
   height: 50px;
   min-width: 152px;
-  margin-left: 255px;
+  margin-left: 252px;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -410,6 +428,8 @@ footer {
   opacity: 0.35;
 }
 
+/* LOGO htmlacademy*/
+
 .site-creator {
   display: flex;
   justify-content: center;
@@ -426,12 +446,30 @@ footer {
   height: 41px;
 }
 
-.site-creator-logo-link:hover path {
-  fill: #81b3d2;
+.site-creator-logo-grey,
+.site-creator-logo-blue {
+  display: none;
 }
 
-.site-creator-logo-link:active path {
-  fill: #bdbbbc;
+.site-creator-logo-link:hover .site-creator-logo-blue {
+  display: block;
+}
+
+.site-creator-logo-link:hover .site-creator-logo-black,
+.site-creator-logo-link:hover .site-creator-logo-grey {
+  display: none;
+}
+
+.site-creator-logo-link:active .site-creator-logo-grey,
+.site-creator-logo-link:focus .site-creator-logo-grey {
+  display: block;
+}
+
+.site-creator-logo-link:active .site-creator-logo-black,
+.site-creator-logo-link:focus .site-creator-logo-black,
+.site-creator-logo-link:active .site-creator-logo-blue,
+.site-creator-logo-link:focus .site-creator-logo-blue {
+  display: none;
 }
 
 /* sedona-hotels*/
