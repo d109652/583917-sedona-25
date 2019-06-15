@@ -58,15 +58,17 @@ a {
   height: 1px;
   margin: -1px;
 }
-/*
+
 .main-header {
-  display: flex;
-  justify-content: center;
+  position: absolute;
+/*  margin-left: auto;
+  margin-right: auto;*/
+
 }
-*/
+
 .main-nav {
-  width: 1200px;
-  margin: 0px auto;
+/*  width: 1200px;
+  margin: 0px auto;*/
   line-height: 26px;
   font-weight: 700;
   color: #000000;
@@ -129,7 +131,9 @@ a {
 
 .polygon-sedona {
 display: block;
+
 margin-top: -58px;
+margin-bottom: 58px;
 }
 
 .sedona-slogan,
@@ -138,11 +142,12 @@ margin-top: -58px;
   font-weight: bold;
   line-height: 26px;
   text-align: center;
+
 }
 
 .sedona-slogan {
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .button {
@@ -153,6 +158,7 @@ margin-top: -58px;
 
 .reasons {
   text-align: center;
+  margin-bottom: 55px;
 }
 
 .interest {display: block;
@@ -170,15 +176,10 @@ margin-top: -58px;
   margin-bottom: 47px;
 }
 
-/*
-.init-form-booking {
+.form-booking-wrapper {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 568px;
-  height: 86px;
 }
-*/
+
 
 .booking {
   display: flex;
@@ -187,14 +188,23 @@ margin-top: -58px;
   align-items: center;
 }
 
-.form-booking-wrapper {
-  position: relative;
+.button-init-form-booking {
+  position: absolute;
+  left: 356px;
+  right: auto;
+  padding: 35px 140px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+/*  margin-left: 356px;
+  weight: 568px; */
+  height: 86px;
 }
 
 .form-booking {
   position:absolute;
-  top: 0px;
-  left: 0;
+  top: 86px;
+  left: 356px;
   width: 100%;
   visibility: visible;
   width: 568px;
@@ -391,6 +401,7 @@ footer {position: relative;
 .footer-box {
   display: flex;
   align-items: center;
+
 }
 
 .hashtag {
