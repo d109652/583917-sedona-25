@@ -61,14 +61,9 @@ a {
 
 .main-header {
   position: absolute;
-/*  margin-left: auto;
-  margin-right: auto;*/
-
 }
 
 .main-nav {
-/*  width: 1200px;
-  margin: 0px auto;*/
   line-height: 26px;
   font-weight: 700;
   color: #000000;
@@ -83,10 +78,6 @@ a {
   list-style: none;
   padding-right: 73px;
   padding-left: 73px;
-}
-
-.nav-item {
-
 }
 
 .nav-list a {
@@ -107,14 +98,15 @@ a {
 
 .link-has-logo {
   position: relative;
-  width: 140px;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
   position: absolute;
   top: 0;
   left:50%;
-  margin-left: -70px;
+  margin-left: -82px;
 }
 
 
@@ -130,10 +122,9 @@ a {
 }
 
 .polygon-sedona {
-display: block;
-
-margin-top: -58px;
-margin-bottom: 58px;
+  display: block;
+  margin-top: -58px;
+  margin-bottom: 58px;
 }
 
 .sedona-slogan,
@@ -142,7 +133,6 @@ margin-bottom: 58px;
   font-weight: bold;
   line-height: 26px;
   text-align: center;
-
 }
 
 .sedona-slogan {
@@ -153,8 +143,6 @@ margin-bottom: 58px;
 .button {
   text-transform: uppercase;
 }
-
-
 
 .reasons {
   text-align: center;
@@ -180,7 +168,6 @@ margin-bottom: 58px;
   position: relative;
 }
 
-
 .booking {
   display: flex;
   flex-direction: column;
@@ -188,23 +175,11 @@ margin-bottom: 58px;
   align-items: center;
 }
 
-.button-init-form-booking {
-  position: absolute;
-  left: 356px;
-  right: auto;
-  padding: 35px 140px;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-/*  margin-left: 356px;
-  weight: 568px; */
-  height: 86px;
-}
-
 .form-booking {
   position:absolute;
-  top: 86px;
-  left: 356px;
+  top: 0px;
+  left: 50%;
+  margin-left: -284px;
   width: 100%;
   visibility: visible;
   width: 568px;
@@ -232,6 +207,7 @@ margin-bottom: 58px;
   justify-content: spase-around;
   align-items: stretch;
   margin: 40px 55px;
+  margin-top: 42px;
 }
 
 .form-booking-item input {
@@ -243,15 +219,22 @@ margin-bottom: 58px;
   line-height: 26px;
 }
 
+/*  .form-booking-item-date  margin-left: 16px; а не 18 чтобы не расползалось в IE11 */
+
 .form-booking-item-date {
   min-width: 346px;
-  margin-left: 18px;
+  margin-left: 16px;
   margin-bottom: 0;
   padding-right: 40px;
-  padding-left: 13px;
+  padding-left: 12px;
   background-image: url('../img/calendar.svg');
   background-repeat: no-repeat;
-  background-position: center right 15px;
+  background-position: center right 10px;
+  text-transform: uppercase;
+}
+
+.form-booking-item-dateout {
+  margin-bottom: 30px;
 }
 
 .form-booking-item-date:hover {
@@ -263,7 +246,7 @@ margin-bottom: 58px;
   background-image: url('../img/calendar-blue.svg');
 }
 
-.form-booking-item-dateout {
+.form-booking-item-dateout .form-booking-item-date {
   margin-left: 14px;
 }
 
@@ -271,12 +254,19 @@ margin-bottom: 58px;
   width:100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
   margin-bottom: 55px;
 }
 
 .piple-count div {
   flex-shrink: 1;
+}
+
+.form-booking-item-adult-count label {
+  margin-right: 34px;
+}
+
+.form-booking-item-children-count label {
+  margin-right: 22px;
 }
 
 .form-booking-item-count {
@@ -324,67 +314,25 @@ color: #81b3d2;
 }
 
 .form-booking-button-plus:hover {
-background-color: #f2f2f2;
-background-image: url('../img/++black.png');
-background-repeat: no-repeat;
-background-position: center;
-color: #000000;
+  background-color: #f2f2f2;
+  background-image: url('../img/++black.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #000000;
 }
 
 .form-booking-button-plus:active,
 .form-booking-button-plus:focus {
-background-color: #f2f2f2;
-background-image: url('../img/++blue.png');
-background-repeat: no-repeat;
-background-position: center;
-color: #81b3d2;
+  background-color: #f2f2f2;
+  background-image: url('../img/++blue.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #81b3d2;
 }
 
-
-/*
-.form-booking-button::before {
-  content: "";
-  position:absolute;
-  top: 18px;
-  left: 13px;
-  background-color: #a9a9a9;
-  width: 13px;
-  height: 3px;
-}
---blue.png
-
-
-.form-booking-button::before:active,
- .form-booking-button::before:focus {
-  background-color: #000000;
-}
-
-
-
-
-.form-booking-button-plus::after {
-  content: "";
-  position:absolute;
-  top: 13px;
-  left: 18px;
-  background-color: #a9a9a9;
-  width: 3px;
-  height: 13px;
-}
-
-.form-booking-button-minus1::before {
-position: absolute;
-top: 0;
-left: 0;
-width: 20px;
-height: 20px;
-color: blue;
-}
-*/
 .button-booking-find {
   max-width: 458px;
   height: 58px;
-
 }
 
 /* sedona-footer*/
@@ -394,8 +342,12 @@ footer {position: relative;
   padding-top: 20px;
   margin-top: -126px;
   margin-bottom: 0;
-
   background-image: url('../img/footer-back.png');
+}
+
+.catalog-footer {
+    padding-top: 8px;
+  margin-top: 0px;
 }
 
 .footer-box {
@@ -414,7 +366,6 @@ footer {position: relative;
 
 .social-block {
   padding: 0;
-
   height: 50px;
   min-width: 152px;
   margin-left: 252px;
@@ -452,6 +403,7 @@ footer {position: relative;
 .Websiteby {
   margin-right: 6px;
 }
+
 .site-creator-logo {
   width: 115px;
   height: 41px;
@@ -485,18 +437,22 @@ footer {position: relative;
 
 /* sedona-hotels*/
 
+
 .sort {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.sorting {
+.sorting {min-height: 86px;
   display: flex;
   flex-direction: row;
-
 }
 
+.sorting:first-child {
+  font-size: 12px;
+  color: #000000;
+}
 .sort-start-end {
   display: flex;
   flex-direction: row;
@@ -506,34 +462,36 @@ footer {position: relative;
   display: flex;
   padding-top: 30px;
   padding-bottom: 30px;
+  min-height: 150px;
+  border-bottom: solid 1px #e5e5e5;
 }
 
 .catalog-item-image {
   order:-1;
-  margin-left: 70px;
+  margin-left: 35px;
 }
 
 .catalog-item-image img {
   display: block;
 }
 
-.catalog-item-flexitem1 {
+.catalog-item-characteristic {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-left: 30px;
 }
 
-.catalog-item-flexitem1 > a {
+.catalog-item-characteristic > a {
   color: #000000;
 }
 
-.catalog-item-flexitem1 > a:hover,
-.catalog-item-flexitem1 > a:focus {
+.catalog-item-characteristic > a:hover,
+.catalog-item-characteristic > a:focus {
   color: #669ec0;
 }
 
-.catalog-item-flexitem1 > a:active {
+.catalog-item-characteristic > a:active {
   color: #cacaca;
 }
 
@@ -543,8 +501,7 @@ footer {position: relative;
 }
 
 .catalog-item-price {
-display: flex;
-
+  display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -554,13 +511,6 @@ display: flex;
    margin-right: 7px;
 }
 
-.catalog-item-flexitem2 {
-  margin-left: auto;
-  margin-right: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
 .catalog-item-actions {
   padding-left: 0;
@@ -578,18 +528,30 @@ display: flex;
 }
 
 .link-detail {
-  margin-right: 3px;
-  padding: 8px 17px;
+  margin-right: 2px;
+  padding: 3px 17px 3px;
 }
 
 .link-tobook {
-  padding: 8px 17px;
+  padding: 3px 17px 3px;
+}
+
+.catalog-item-point {
+  margin-left: auto;
+  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stars {
+  text-align: right;
 }
 
 .rating {
   background-color: #f2f2f2;
   padding-left: 16px;
   padding-right: 13px;
-  padding-top: 8px;
-  padding-bottom: 9px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
