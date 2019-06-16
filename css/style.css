@@ -109,7 +109,6 @@ a {
   margin-left: -82px;
 }
 
-
 .container {
   width: 1200px;
   margin-left: auto;
@@ -291,20 +290,20 @@ a {
 }
 
 .form-booking-button-minus:hover {
-background-color: #f2f2f2;
-background-image: url('../img/--black.png');
-background-repeat: no-repeat;
-background-position: center;
-color: #000000;
+  background-color: #f2f2f2;
+  background-image: url('../img/--black.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #000000;
 }
 
 .form-booking-button-minus:active,
 .form-booking-button-minus:focus {
-background-color: #f2f2f2;
-background-image: url('../img/--blue.png');
-background-repeat: no-repeat;
-background-position: center;
-color: #81b3d2;
+  background-color: #f2f2f2;
+  background-image: url('../img/--blue.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #81b3d2;
 }
 
 .form-booking-button-plus {
@@ -346,7 +345,7 @@ footer {position: relative;
 }
 
 .catalog-footer {
-    padding-top: 8px;
+  padding-top: 8px;
   margin-top: 0px;
 }
 

@@ -62,25 +62,25 @@
             <div class="form-booking-flex">
               <p class="form-booking-item">
                 <label class="form-booking-item-name" for="datein">Дата заезда:</label>
-                <input type="text" class="form-booking-item-date" name="datein" id="datein" value="24 апреля 2017">
+                <input type="text" class="form-booking-item-date" name="datein" id="datein" value="24 апреля 2017" required>
               </p>
               <p class="form-booking-item form-booking-item-dateout">
                 <label class="form-booking-item-name" for="dateout">Дата выезда:</label>
-                <input type="text" class="form-booking-item-date form-booking-item" name="dateout" id="dateout" value="4 июля 2017">
+                <input type="text" class="form-booking-item-date form-booking-item" name="dateout" id="dateout" value="4 июля 2017" required>
               </p>
               <div class="piple-count">
                   <div class="form-booking-item form-booking-item-adult-count">
                     <label for="adult-count" class="form-booking-item-name form-booking-item-name">Взрослые:</label>
                     <button class="form-booking-button form-booking-button-minus" type="button"
                        aria-label="меньше">-</button><input type="text" name="adult-count" id="adult-count"
-                       class="form-booking-item-count" value="2" aria-label="введите количество взрослых" /><button
+                       class="form-booking-item-count" value="2" aria-label="введите количество взрослых" required /><button
                        class="form-booking-button form-booking-button-plus" type="button" aria-label="больше">+</button>
                   </div>
                   <div class="form-booking-item form-booking-item-children-count">
                     <label for="children-count" class="form-booking-item-name">Дети:</label>
                     <button class="form-booking-button form-booking-button-minus" type="button" aria-label="меньше">-</button><input type="text"
                         name="children-count" id="children-count" class="form-booking-item-count" value="0"
-                        aria-label="введите количество детей" /><button class="form-booking-button form-booking-button-plus" type="button"
+                        aria-label="введите количество детей" required /><button class="form-booking-button form-booking-button-plus" type="button"
                         aria-label="больше">+</button>
                   </div>
               </div>
