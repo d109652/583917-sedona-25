@@ -33,24 +33,59 @@
     </div>
     <main class="container catalog-main">
       <h1 class="visually-hidden">Седона каталог</h1>
+      <div class="catalog-main-background-color">
+    <img class="catalog-main-background" src="img/background-hotel.jpg" alt"background">
+  </div>
       <form method="get" class="form-sorting" action="https://echo.htmlacademy.ru">
         <fieldset>
         <legend>
           Инфраструктура:
         </legend>
-        <div class="form-sorting-box">
-        <input type="checkbox" name="infr" value="swimming-pool">бассейн</input>
-        <input type="checkbox" name="infr" value="swimming-pool"> бассейн</input>
-        <input type="checkbox" name="infr" value="swimming-pool"> бассейн</input>
-      </div>
+        <ul class="form-sorting-box">
+          <li>
+           <label class="infrastructure-checkbox">
+        <input class="infr visually-hidden" type="checkbox" name="infr" value="swimming-pool"></input>
+        <span class="checkbox-indicator"></span>бассейн
+           </label>
+          </li>
+          <li>
+            <label class="infrastructure-checkbox">
+         <input class="infr visually-hidden" type="checkbox" name="infr" value="swimming-pool"></input>
+         <span class="checkbox-indicator"></span>бассейн
+            </label>
+          </li>
+          <li>
+            <label class="infrastructure-checkbox">
+         <input class="infr visually-hidden" type="checkbox" name="infr" value="swimming-pool"></input>
+         <span class="checkbox-indicator"></span>бассейн
+            </label>
+          </li>
+      </ul>
         </fieldset>
         <fieldset>
         <legend>
           Тип жилья:
         </legend>
-        <input type="checkbox" name="infr" value="swimming-pool"> бассейн</input>
-        <input type="checkbox" name="infr" value="swimming-pool"> бассейн</input>
-        <input type="checkbox" name="infr" value="swimming-pool"> бассейн</input>
+        <ul class="form-sorting-box">
+          <li>
+            <label class="infrastructure-checkbox">
+         <input class="infr visually-hidden" type="checkbox" name="infr" value="swimming-pool"></input>
+         <span class="checkbox-indicator"></span>бассейн
+            </label>
+          </li>
+          <li>
+            <label class="infrastructure-checkbox">
+         <input class="infr visually-hidden" type="checkbox" name="infr" value="swimming-pool"></input>
+         <span class="checkbox-indicator"></span>бассейн
+            </label>
+          </li>
+          <li>
+            <label class="infrastructure-checkbox">
+         <input class="infr visually-hidden" type="checkbox" name="infr" value="swimming-pool"></input>
+         <span class="checkbox-indicator"></span>бассейн
+            </label>
+          </li>
+      </ul>
         </fieldset>
         <div>
           <div>
@@ -59,9 +94,7 @@
           <button type="button">показать
           </button>
         </div>
-
       </form>
-      <img src="img/background-hotel.jpg" alt"">
       <div class="sort">
         <div class="sorting">
           <div>

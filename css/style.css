@@ -521,16 +521,27 @@ footer {position: relative;
   flex-direction: row;
 }
 
-.form-sorting {
+.catalog-main-background-color {
   position: absolute;
-  display: flex;
-  overflow: hidden;
-  align-items: center;
-  top:56px;
   left: auto;
-  right:auto;
+  right: auto;
+  z-index: -1;
   width: 1200px;
-  height: 217px;
+  height: 273px;
+background-color: #4477a2;
+}
+
+.catalog-main-background {
+
+}
+
+.form-sorting {
+  display: flex;
+  align-items:baseline;
+  width: 1200px;
+  height: auto;
+  padding-top: 85px;
+  color: #ffffff;
 }
 
 .form-sorting div {
@@ -538,12 +549,50 @@ footer {position: relative;
 }
 
 .form-sorting-box {
-
   min-width: 240px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.form-sorting-box input {
+.infrastructure-checkbox {
+position: relative;
+padding-left: 30px;
+cursor: pointer;
+}
+
+.checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 23px;
+background-image: url('../img/checkbox-off.png');
+background-repeat: no-repeat;
+}
+
+.checkbox-indicator:active {
+  background-image: url('../img/checkbox-on.png');
+}
+
+.form-sorting-box > li {
   display: block;
+  padding-bottom: 30px;
+  padding-left: 0;
+}
+
+.form-sorting-box > li:last-child {
+    padding-bottom: 0px;
+}
+
+
+.form-sorting-box input {
+  display: inline-block;
+}
+
+.form-sorting fieldset {
+  border-color: rgba(0, 0, 0, 0.2);
 }
 
 .catalog-item {
