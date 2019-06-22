@@ -43,21 +43,21 @@
         </legend>
         <ul class="form-sorting-box">
           <li>
-           <label class="infrastructure-checkbox">
-        <input class="infr visually-hidden" type="checkbox" name="infr" value="swimming-pool"></input>
+           <label class="infrastructure-name">
+        <input class="infrastructure-checkbox visually-hidden" type="checkbox" name="infrastructure-checkbox" value="swimming-pool" checked></input>
         <span class="checkbox-indicator"></span>бассейн
            </label>
           </li>
           <li>
-            <label class="infrastructure-checkbox">
-         <input class="infr visually-hidden" type="checkbox" name="infr" value="swimming-pool"></input>
-         <span class="checkbox-indicator"></span>бассейн
+            <label class="infrastructure-name">
+         <input class="infrastructure-checkbox visually-hidden" type="checkbox" name="infrastructure-checkbox" value="swimming-pool"></input>
+         <span class="checkbox-indicator"></span>Парковка
             </label>
           </li>
           <li>
-            <label class="infrastructure-checkbox">
-         <input class="infr visually-hidden" type="checkbox" name="infr" value="swimming-pool"></input>
-         <span class="checkbox-indicator"></span>бассейн
+            <label class="infrastructure-name">
+         <input class="infrastructure-checkbox visually-hidden" type="checkbox" name="infrastructure-checkbox" value="swimming-pool"></input>
+         <span class="checkbox-indicator"></span>Wi-Fi
             </label>
           </li>
       </ul>
@@ -68,29 +68,43 @@
         </legend>
         <ul class="form-sorting-box">
           <li>
-            <label class="infrastructure-checkbox">
-         <input class="infr visually-hidden" type="checkbox" name="infr" value="swimming-pool"></input>
-         <span class="checkbox-indicator"></span>бассейн
+            <label class="infrastructure-name">
+         <input class="infrastructure-checkbox visually-hidden" type="checkbox" name="infrastructure-checkbox" value="swimming-pool" checked></input>
+         <span class="checkbox-indicator"></span>Гостиница
             </label>
           </li>
           <li>
-            <label class="infrastructure-checkbox">
-         <input class="infr visually-hidden" type="checkbox" name="infr" value="swimming-pool"></input>
-         <span class="checkbox-indicator"></span>бассейн
+            <label class="infrastructure-name">
+         <input class="infrastructure-checkbox visually-hidden" type="checkbox" name="infrastructure-checkbox" value="swimming-pool" checked></input>
+         <span class="checkbox-indicator"></span>Мотель
             </label>
           </li>
           <li>
-            <label class="infrastructure-checkbox">
-         <input class="infr visually-hidden" type="checkbox" name="infr" value="swimming-pool"></input>
-         <span class="checkbox-indicator"></span>бассейн
+            <label class="infrastructure-name">
+         <input class="infrastructure-checkbox visually-hidden" type="checkbox" name="infrastructure-checkbox" value="swimming-pool" checked></input>
+         <span class="checkbox-indicator"></span>Апартаменты
             </label>
           </li>
       </ul>
         </fieldset>
         <div>
-          <div>
-            Стоимость в сутки (Р):
-          </div>
+          <fieldset class="price-control">
+            <legend>
+              Стоимость в сутки (Р):
+            </legend>
+            <div class="price-control-box">
+              <label class="min-price">от
+                <input type="text" value="0"> </input>
+              </label>
+              <label class="max-price">до
+                <input type="text" value="3000"> </input>
+              </label>
+            </div> <!--
+            <div class="price-control-box">
+
+            </div> -->
+          </fieldset>
+
           <button type="button">показать
           </button>
         </div>
@@ -101,17 +115,19 @@
            Найдено: 3
           </div>
           <div>
-           сортировка
+           сортировка:
           </div>
-          <div>
-          по типу
-          </div>
-          <div>
-          по цене
-          </div>
-          <div>
-          по рейтингу
-          </div>
+          <ul class="sorting-list">
+            <li class="sorting-item sorting-item-price">
+                <a href="">по цене</a>
+            </li>
+            <li class="sorting-item">
+                <a href="">по типу</a>
+            </li>
+            <li class="sorting-item">
+            <a href="">по рейтингу</a>
+            </li>
+          </ul>
         </div>
         <div class="sort-start-end">
           <div>
