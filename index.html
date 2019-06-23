@@ -8,8 +8,9 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="main-shadow">
     <div  class="container">
-    <header class="main-header container">
+    <header class="main-header">
       <nav class="main-nav">
         <img class="logo" src="img/logo.png" alt="Логотип сайта о городке Седона" width="140" height="72"/>
     <ul class="nav-list">
@@ -28,8 +29,7 @@
     </ul>
       </nav>
     </header>
-</div>
-    <main class="container">
+    <main>
       <h1 class="visually-hidden">Сайт городка Sedona</h1>
         <img class="welcome-sedona" src="img/background-photo.jpg" width="1200" height="565" alt="background-photo" />
         <img class="polygon-sedona" src="img/polygon.svg" width="1200" height="59" alt="background-photo-2" />
@@ -117,7 +117,6 @@
             <ul class="necessary-things">
               <li>
                 <div class="item-of-advantages item-of-advantages-necessary-things">
-                  <p>
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     	 width="75px" height="72px" viewBox="0 0 75 72" enable-background="new 0 0 75 72" xml:space="preserve">
                       <g>
@@ -138,7 +137,6 @@
                     	<rect x="54.936" y="47.182" fill="#81B3D2" width="3" height="3.919"/>
                       </g>
                     </svg>
-                  </p>
                   <h3>
                     Жильё
                   </h3>
@@ -149,7 +147,6 @@
               </li>
               <li>
                 <div class="item-of-advantages item-of-advantages-necessary-things">
-                  <p>
                     <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     	 width="74px" height="70px" viewBox="0 0 74 70" enable-background="new 0 0 74 70" xml:space="preserve">
                       <g>
@@ -172,7 +169,6 @@
                     	<ellipse fill="#81B3D2" cx="44.732" cy="10.23" rx="1.946" ry="2.03"/>
                       </g>
                     </svg>
-                  </p>
                   <h3>
                     Еда
                   </h3>
@@ -182,9 +178,8 @@
                 </div>
               </li>
               <li>
-                <div class="item-of-advantages item-of-advantages-necessary-things">
-                  <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <div class="item-of-advantages item-of-advantages-necessary-things item-of-advantages-necessary-things-souvenirs">
+                    <svg class="souvenirs" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     	 width="64px" height="76px" viewBox="0 0 64 76" enable-background="new 0 0 64 76" xml:space="preserve">
                     <path fill-rule="evenodd" clip-rule="evenodd" fill="#81B3D2" d="M61.097,22.501h-0.103H36.312
                     	C50.125,15.602,51.229,11.25,50.72,8.816c-1.162-3.963-5.692-7.023-10.002-5.407c-5.569,2.089-7.137,10.388-8.644,16.387
@@ -198,12 +193,11 @@
                     	V36.524z M35.66,36.524v3.037v33.466h-7.174V39.561v-3.037V25.538h7.174V36.524z M58.011,73.026H38.644V39.561h19.367V73.026z
                     	 M60.931,36.524H38.644V25.538h22.287V36.524z"/>
                     </svg>
-                  </p>
                   <h3>
                     Сувениры
                   </h3>
                   <p>
-                    Не только китайского, но и местного<br> там течёт своя жизнь
+                    Не только китайского, но и местного<br>производства!
                   </p>
                 </div>
               </li>
@@ -230,10 +224,12 @@
               <p class="form-booking-item">
                 <label class="form-booking-item-name" for="datein">Дата заезда:</label>
                 <input type="text" class="form-booking-item-date" name="datein" id="datein" value="24 апреля 2017" required>
+                <button type="button" class="calendar"></button>
               </p>
               <p class="form-booking-item form-booking-item-dateout">
                 <label class="form-booking-item-name" for="dateout">Дата выезда:</label>
                 <input type="text" class="form-booking-item-date form-booking-item" name="dateout" id="dateout" value="4 июля 2017" required>
+                <button type="button" class="calendar"></button>
               </p>
               <div class="piple-count">
                   <div class="form-booking-item form-booking-item-adult-count">
@@ -261,7 +257,7 @@
         <img src="img/map.jpg" width="1200" height="593" alt="Карта местности с обозначением местонахождения города">
       </section>
     </main>
-    <footer class="container">
+    <footer>
       <div class="footer-box">
         <span class="hashtag">#visitsedona</span>
         <ul class="social-block">
@@ -289,5 +285,7 @@
         </div>
       </div>
     </footer>
+  </div>
+  </div>
   </body>
 </html>
