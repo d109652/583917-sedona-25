@@ -23,15 +23,18 @@ a {
   width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #f2f2f2;
+  /*
+  background-color: #f2f2f2; */
 }
+
+
 
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #ffffff;
-  box-shadow:0 0 20px rgba(0,0,0,0.4);
+/*  background-color: #ffffff;*/
+  box-shadow:0 0 50px rgba(0,0,0,0.4);
 }
 
 .button {
@@ -76,7 +79,6 @@ a {
 
 .main-header {
   position: absolute;
-
 }
 
 .main-nav {
@@ -84,10 +86,10 @@ a {
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
-    position: relative;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+  position: relative;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-list {
@@ -357,6 +359,7 @@ a {
 }
 
 .form-booking-item input {
+  position: relative;
   background-color: #f2f2f2;
   height: 38px;
   border: 0;
@@ -365,19 +368,27 @@ a {
   line-height: 26px;
 }
 
+
 /*  .form-booking-item-date  margin-left: 16px; а не 18 чтобы не расползалось в IE11 */
 
 .form-booking-item-date {
-  min-width: 308px;
+  min-width: 311px;
   margin-left: 16px;
   margin-bottom: 0;
   padding-right: 40px;
   padding-left: 12px;
-
   text-transform: uppercase;
 }
 
+.form-booking-item-datein .form-booking-item-date {
+  min-width: 312px;
+}
+
 .calendar {
+  position: absolute;
+  content: ' ';
+  top: -10px;
+  left: 420px;
   width: 36px;
   height: 38px;
   background-color: #f2f2f2;
@@ -432,6 +443,10 @@ a {
 
 .form-booking-item-name {
   font-weight:bold;
+}
+
+.form-booking-item-name-date {
+  position: relative;
 }
 
 .form-booking-button {
@@ -490,6 +505,7 @@ a {
   max-width: 458px;
   height: 58px;
 }
+
 
 /* sedona-footer*/
 
