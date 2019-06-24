@@ -20,25 +20,19 @@ a {
 }
 
 .grey-backgruond-for-shadow {
+  width: 1280px;
+  left: 50%;
+  margin-left: -640px;
   position: absolute;
   z-index: -5;
   background-color: #f2f2f2;
 }
-.main-shadow {
-  width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  /*
-  background-color: #f2f2f2; */
-}
-
-
 
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-/*  background-color: #ffffff;*/
+/*  background-color: #ffffff; */
   box-shadow:0 0 50px rgba(0,0,0,0.4);
 }
 
@@ -174,6 +168,7 @@ a {
 .sedona-slogan {
   display: block;
   margin-bottom: 30px;
+  background-color: #ffffff;
 }
 
 .button {
@@ -710,8 +705,12 @@ background-color: #4477a2;
   color: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 3px;
+  margin-left: 96px;
 }
 
+.form-sorting fieldset:nth-of-type(2) {
+  margin-left: 13px;
+}
 
 /* form price-control*/
 
@@ -796,6 +795,7 @@ margin-bottom: 10px;
   padding-left: 73px;
   padding-right: 73px;
   border-bottom: 1px solid #e5e5e5;
+    align-items: center;
 
 }
 
@@ -848,6 +848,46 @@ margin-bottom: 10px;
   color: #81b3d2;
 }
 
+.sort-start-end {
+  width: 34px;
+  height: 11px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort-start-end div:first-child {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 11px solid #cacaca;
+}
+
+.sort-start-end div:last-child {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 11px solid #81b3d2;
+}
+
+.sort-start-end div:first-child:hover {
+	border-bottom: 11px solid #231f20;
+}
+
+.sort-start-end div:last-child:hover {
+	border-top: 11px solid #231f20;
+}
+
+.sort-start-end div:first-child:focus,
+.sort-start-end div:first-child:active {
+	border-bottom: 11px solid #81b3d2;
+}
+
+.sort-start-end div:last-child:focus,
+.sort-start-end div:last-child:active {
+	border-top: 11px solid #81b3d2;
+}
 
 /* catalog */
 
@@ -862,7 +902,7 @@ margin-bottom: 10px;
   padding-top: 30px;
   padding-bottom: 30px;
   min-height: 150px;
-  border-bottom: solid 1px #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .catalog-item-image {
