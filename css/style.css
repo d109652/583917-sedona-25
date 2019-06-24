@@ -19,6 +19,11 @@ a {
   text-decoration: none;
 }
 
+.grey-backgruond-for-shadow {
+  position: absolute;
+  z-index: -5;
+  background-color: #f2f2f2;
+}
 .main-shadow {
   width: 1280px;
   margin-left: auto;
@@ -518,7 +523,7 @@ footer {position: relative;
 }
 
 .catalog-footer {
-  padding-top: 8px;
+  padding-top: 22px;
   margin-top: 0px;
 }
 
@@ -610,6 +615,10 @@ footer {position: relative;
 
 /* sedona-catalog*/
 
+.result {
+  background-color: #ffffff;
+}
+
 .catalog-main-background-color {
   position: absolute;
   left: auto;
@@ -641,7 +650,7 @@ background-color: #4477a2;
 
 .form-sorting fieldset {
   padding-left: 0;
-  padding-right: : 0;
+  padding-right: 0;
 }
 
 .form-sorting-box {
@@ -714,6 +723,7 @@ margin-bottom: 10px;
   position: relative;
   min-width: 320px;
   height: 36px;
+  margin-bottom: 20px;
   border: 2px solid #ffffff;
   border-radius: 3px;
 }
@@ -758,6 +768,24 @@ margin-bottom: 10px;
   margin-bottom: 40px;
 }
 
+.range {
+    position: relative;
+    height: 2px;
+    width: 309px;
+    background-color: #ffffff;
+}
+
+.range-circle {
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  background-color: #ababab;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px;
+}
+
+
 
 /*  sort */
 
@@ -767,6 +795,7 @@ margin-bottom: 10px;
   justify-content: space-between;
   padding-left: 73px;
   padding-right: 73px;
+  border-bottom: 1px solid #e5e5e5;
 
 }
 
@@ -824,6 +853,7 @@ margin-bottom: 10px;
 
 .catalog-list {
   margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
 }
 
