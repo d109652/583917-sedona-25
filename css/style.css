@@ -18,30 +18,27 @@ body {
 a {
   text-decoration: none;
 }
-
+/*
 .rey-backgruond-for-shadow {
   width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #28cadf;
+  background-color: #f2f2f2;
 }
-
+*/
 .main-index {
   background-color: #ffffff;
 }
-/*
-.qqqqqqqq {
-  width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #28cadf;
-}
-*/
+
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow:0 0 50px rgba(255,0,0,0.4);
+  box-shadow:40px 1px 1px 0px rgba(98,34,34,1);
+-webkit-box-shadow:40px 1px 1px 0px rgba(98,34,34,1);
+-moz-box-shadow:40px 1px 1px 0px rgba(98,34,34,1);
+  box-shadow:0 0 50px rgba(0,0,0,0.4);
+  https://tamali.net/instrument/html-css/css-box-shadow/
 }
 
 .button {
@@ -557,7 +554,6 @@ footer {position: relative;
 }
 
 .catalog-footer {
-  padding-top: 22px;
   margin-top: 0px;
   background-color: #ffffff;
 }
@@ -568,12 +564,12 @@ footer {position: relative;
   display: flex;
   align-items: center;
   justify-content: space-around;
-
 }
+
+
 
 .hashtag {
   width: 140px;
-  /* margin-left: 132px; */
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -583,7 +579,6 @@ footer {position: relative;
   padding: 0;
   height: 50px;
   min-width: 152px;
-  /*margin-left: 252px;*/
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -652,7 +647,6 @@ footer {position: relative;
 
 
 /* sedona-catalog*/
-
 
 
 .catalog-main-background-color {
@@ -818,18 +812,45 @@ margin-bottom: 10px;
 .range {
   position: relative;
   height: 2px;
-  width: 309px;
-  background-color: #ffffff;
+  width: 324px;
+  background-color: rgba(255, 255, 255, .3);
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 4px;
 }
 
 .range-circle {
+  box-sizing: content-box;
   width: 4px;
   height: 4px;
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
   background-color: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 0 5px;
+  box-shadow:1px 2px 1px 0px rgba(255, 255, 255,0.5);
+  -webkit-box-shadow:1px 2px 1px 0px rgba(255, 255, 255,0.5);
+  -moz-box-shadow:1px 2px 1px 0px rgba(255, 255, 255,0.5);
+}
+
+.range-min {
+  left: 0;
+}
+
+.range-max {
+  right: 20%;
+}
+
+.range-value {
+  position: absolute;
+  top: 0;
+  right: 20%;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 5px;
 }
 
 
@@ -846,7 +867,7 @@ margin-bottom: 10px;
   padding-left: 73px;
   padding-right: 73px;
   border-bottom: 1px solid #e5e5e5;
-    align-items: center;
+  align-items: center;
 
 }
 
@@ -879,8 +900,8 @@ margin-bottom: 10px;
   width: 240px;
   display: flex;
   justify-content: space-between;
-     margin: 0;
-     padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .sorting-item {
