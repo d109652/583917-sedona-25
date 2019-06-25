@@ -8,32 +8,33 @@ html {
 body {
   margin: 0;
   padding: 0;
+
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  background-color: #ffffff;
 }
 
 a {
   text-decoration: none;
 }
 
-.grey-backgruond-for-shadow {
-  width: 1280px;
-  left: 50%;
-  margin-left: -640px;
-  position: absolute;
-  z-index: -5;
-  background-color: #f2f2f2;
+main-index {
+  background-color: #ffffff;
 }
-
+/*
+.qqqqqqqq {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #28cadf;
+}
+*/
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-/*  background-color: #ffffff; */
-  box-shadow:0 0 50px rgba(0,0,0,0.4);
+  box-shadow:0 0 50px rgba(255,0,0,0.4);
 }
 
 .button {
@@ -78,6 +79,7 @@ a {
 
 .main-header {
   position: absolute;
+  z-index: 105;
 }
 
 .main-nav {
@@ -93,6 +95,7 @@ a {
 
 .nav-list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   min-height:56px;
   margin:0;
@@ -112,7 +115,7 @@ a {
 .nav-item:last-child {
   text-align: right;
 }
-
+/*
 .nav-item:first-child {
   margin-right: 147px;
 }
@@ -124,6 +127,8 @@ a {
 .nav-item:last-child {
   margin-left: 162px;
 }
+*/
+
 .nav-list a {
   display: flex;
   align-items:center;
@@ -225,16 +230,16 @@ a {
 }
 
 .item-of-advantages p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .item-of-advantages p:last-child {
-    margin-bottom: auto;
+  margin-bottom: auto;
 }
 
 .item-of-advantages-necessary-things {
-    min-height: 330px;
-    margin: 0 auto;
+  min-height: 330px;
+  margin: 0 auto;
 }
 
 .item-of-advantages-necessary-things p,
@@ -520,17 +525,19 @@ footer {position: relative;
 .catalog-footer {
   padding-top: 22px;
   margin-top: 0px;
+  background-color: #ffffff;
 }
 
 .footer-box {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 
 }
 
 .hashtag {
   width: 140px;
-  margin-left: 132px;
+  /* margin-left: 132px; */
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -540,7 +547,7 @@ footer {position: relative;
   padding: 0;
   height: 50px;
   min-width: 152px;
-  margin-left: 252px;
+  /*margin-left: 252px;*/
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -568,8 +575,8 @@ footer {position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 100px;
-  margin-left: auto;
+  /*margin-right: 100px;
+  margin-left: auto;*/
 }
 
 .Websiteby {
@@ -610,9 +617,7 @@ footer {position: relative;
 
 /* sedona-catalog*/
 
-.result {
-  background-color: #ffffff;
-}
+
 
 .catalog-main-background-color {
   position: absolute;
@@ -621,7 +626,17 @@ footer {position: relative;
   z-index: -1;
   width: 1200px;
   height: 273px;
-background-color: #4477a2;
+  background-color: #4477a2;
+}
+
+.catalog-main-background {
+  position: absolute;
+  z-index: -1;
+  left: auto;
+  right: auto;
+  z-index: -1;
+  width: 1200px;
+  height: 273px;
 }
 
 .form-sorting {
@@ -646,6 +661,7 @@ background-color: #4477a2;
 .form-sorting fieldset {
   padding-left: 0;
   padding-right: 0;
+  border-color:  rgba(0, 0, 0, 0.0);
 }
 
 .form-sorting-box {
@@ -688,14 +704,10 @@ background-color: #4477a2;
     padding-bottom: 0px;
 }
 
-
 .form-sorting-box input {
   display: inline-block;
 }
 
-.form-sorting fieldset {
-  border-color: rgba(0, 0, 0, 0.0);
-}
 
 .form-sorting button {
   width: 133px;
@@ -768,10 +780,10 @@ margin-bottom: 10px;
 }
 
 .range {
-    position: relative;
-    height: 2px;
-    width: 309px;
-    background-color: #ffffff;
+  position: relative;
+  height: 2px;
+  width: 309px;
+  background-color: #ffffff;
 }
 
 .range-circle {
@@ -785,8 +797,11 @@ margin-bottom: 10px;
 }
 
 
-
 /*  sort */
+
+.result {
+  background-color: #ffffff;
+}
 
 .sort {
   display: flex;
