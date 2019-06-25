@@ -19,7 +19,14 @@ a {
   text-decoration: none;
 }
 
-main-index {
+.rey-backgruond-for-shadow {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #28cadf;
+}
+
+.main-index {
   background-color: #ffffff;
 }
 /*
@@ -201,11 +208,22 @@ main-index {
 .list-of-advantages > li:first-child,
 .list-of-advantages > li:nth-child(2) {
   width: 1200px;
-  max-height: 256px;
+  min-height: 256px;
   display: flex;
-  justify-content: space-between;
   background-color: #81b3d2;
   color: #ffffff;
+}
+
+.list-of-advantages > li:first-child {
+  background-image: url('../img/town.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.list-of-advantages > li:nth-child(2) {
+  background-image: url('../img/devils-bridge.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .item-of-advantages {
@@ -215,6 +233,18 @@ main-index {
    justify-content: space-between;
    align-items: center;
    margin: 0px auto;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+.item-of-advantages-real-town {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.item-of-advantages-devils-bridge {
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .item-of-advantages p,
@@ -511,13 +541,17 @@ main-index {
   height: 58px;
 }
 
+.map img{display: block;
+  margin-bottom: 0;
+}
 
 /* sedona-footer*/
 
 footer {position: relative;
-  height: 120px;
-  padding-top: 20px;
-  margin-top: -126px;
+  display: flex;
+  justify-content: space-around;
+/*  padding-top: 20px; */
+  margin-top: -120px;
   margin-bottom: 0;
   background-image: url('../img/footer-back.png');
 }
@@ -529,6 +563,8 @@ footer {position: relative;
 }
 
 .footer-box {
+  width: 1200px;
+  min-height: 120px;
   display: flex;
   align-items: center;
   justify-content: space-around;
