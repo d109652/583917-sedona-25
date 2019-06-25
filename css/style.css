@@ -19,14 +19,7 @@ a {
   text-decoration: none;
 }
 
-.grey-backgruond-for-shadow {
-  width: 1280px;
-  left: 50%;
-  margin-left: -640px;
-  position: absolute;
-  z-index: -5;
-  background-color: #f2f2f2;
-}
+
 
 .container {
   width: 1200px;
