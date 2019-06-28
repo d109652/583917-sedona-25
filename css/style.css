@@ -137,6 +137,10 @@ a {
   color: #cacaca;
 }
 
+.nav-item-hotel a {
+  color: #766357;
+}
+
 .logo {
   position: absolute;
   top: 0;
@@ -954,7 +958,7 @@ footer {position: relative;
           align-items: center;
 }
 
-.sorting {min-height: 86px;
+.sorting {height: 86px;
   width: 518px;
   display: -webkit-box;
   display: -ms-flexbox;
