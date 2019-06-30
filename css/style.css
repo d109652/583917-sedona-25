@@ -170,6 +170,7 @@ a {
 .sedona-slogan {
   display: block;
   margin-bottom: 30px;
+  padding: 0 380px;
   background-color: #ffffff;
 }
 
@@ -239,18 +240,21 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin: 0px auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 59px;
+  padding-right: 60px;
 }
 
 .item-of-advantages-real-town {
   margin-left: 0;
-  margin-right: auto;
+  margin-right: 0;
+    padding-right: 860px;
 }
 
 .item-of-advantages-devils-bridge {
   margin-left: auto;
   margin-right: 0;
+  padding-left: 849px;
+  padding-right: 48px;
 }
 
 .item-of-advantages p,
@@ -278,6 +282,21 @@ a {
   margin: 0 auto;
 }
 
+.item-of-advantages-necessary-things-souvenirs {
+  padding-left: 60px;
+  padding-right: 63px;
+}
+
+.item-of-advantages-necessary-things-residence {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.item-of-advantages-necessary-things-food {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
 .item-of-advantages-necessary-things p,
 .item-of-advantages-necessary-things h3 {
   display: block;
@@ -302,6 +321,7 @@ a {
   margin-bottom: 29px;
 }
 
+
 .item-of-advantages-black h3,
 .item-of-advantages-necessary-things h3 {
   color: #000000;
@@ -319,9 +339,10 @@ a {
 .list-of-advantages > li:nth-child(n+3):nth-child(-n+5) {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
-          flex-grow: 1;
+
   background-color: #eeeeee;
   min-height: 255px;
+  width: calc(1200px - 66%);
 }
 
 .list-of-advantages > li:first-child {
@@ -359,6 +380,13 @@ a {
   text-align: center;
   line-height: 24px;
   margin-bottom: 47px;
+  padding-left: 382px;
+  padding-right: 383px;
+}
+
+.offer span {
+  padding-right: 71px;
+  padding-left: 70px;
 }
 
 .form-booking-wrapper {
