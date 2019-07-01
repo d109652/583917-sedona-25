@@ -321,6 +321,22 @@ a {
   margin-bottom: 29px;
 }
 
+/* 3 4 5 */
+
+.item-of-advantages-area {
+  padding-right: 90px;
+  padding-left: 90px;
+}
+
+.item-of-advantages-road {
+  padding-right: 68px;
+  padding-left: 68px;
+}
+
+.item-of-advantages-tourist{
+  padding-right: 75px;
+  padding-left: 75px;
+}
 
 .item-of-advantages-black h3,
 .item-of-advantages-necessary-things h3 {
@@ -339,10 +355,10 @@ a {
 .list-of-advantages > li:nth-child(n+3):nth-child(-n+5) {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
-
   background-color: #eeeeee;
   min-height: 255px;
-  width: calc(1200px - 66%);
+  width: calc(100% / 3);
+  box-sizing: border-box;
 }
 
 .list-of-advantages > li:first-child {
