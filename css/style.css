@@ -26,11 +26,11 @@ a {
 
 .container {
   position: relative;
-  width: 1240px;
+  width: 1200px;
   height: 2762px;
   margin: 0 auto;
  }
- 
+
 .container:before {
   content: '';
   position: absolute;
@@ -38,8 +38,8 @@ a {
   height: 100%;
   top: 0;
   left: -40px;
-  background: rgb(219, 219, 219);
-  background: linear-gradient(270deg, rgb(219, 219, 219) 0%, rgb(242, 242, 242) 100%);
+  background: rgb(242, 242, 242);
+  background: linear-gradient(270deg, rgb(219, 219, 219) 1%, rgb(242, 242, 242) 26%);
  }
 
 .container:after {
@@ -48,9 +48,9 @@ a {
   width: 40px;
   height: 100%;
   top: 0;
-  right: 0;
-  background: rgb(219, 219, 219);
-  background: linear-gradient(270deg, rgb(242, 242, 242) 0%, rgb(219, 219, 219) 100%);
+  right: -40px;
+  background: rgb(242, 242, 242);
+  background: linear-gradient(90deg, rgb(219, 219, 219) 1%, rgb(242, 242, 242) 26%);
 }
 
 .button {
@@ -365,8 +365,6 @@ a {
   margin-bottom: 29px;
 }
 
-/* 3 4 5 */
-
 .item-of-advantages-area {
   padding-right: 90px;
   padding-left: 90px;
@@ -474,7 +472,7 @@ a {
   width: 568px;
   height: 395px;
   background-color: #ffffff;
-  box-shadow: 0 7px 15px 0 rgba(0,1,1,0.15);
+  box-shadow: 0 7px 12px 0 rgba(15,15,15,0.15);
 
 }
 
@@ -888,6 +886,7 @@ footer {position: relative;
 
 .form-sorting-box input {
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .form-sorting button {
@@ -904,6 +903,8 @@ footer {position: relative;
 .form-sorting button:hover,
 .form-sorting button:active {
   cursor: pointer;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .form-sorting fieldset:nth-of-type(2) {
@@ -1250,6 +1251,7 @@ footer {position: relative;
 
 .catalog-item-action {
   display: inline-block;
+  vertical-align: baseline;
   list-style: none;
 }
 
