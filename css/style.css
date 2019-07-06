@@ -539,6 +539,8 @@ a {
 .form-booking-item-date:focus,
 .form-booking-item-date:active {
   background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  outline-color: #e5e5e5;
 }
 
 .form-booking-item-datein .form-booking-item-date {
@@ -872,6 +874,14 @@ footer {position: relative;
 
 .infrastructure-checkbox:checked + .checkbox-indicator {
   background-image: url('../img/checkbox-on.png');
+}
+
+.checkbox-indicator-disabled {
+  background-image: url('../img/checkbox-off-disabled.png');
+}
+
+.checkbox-indicator-disabled-checked {
+  background-image: url('../img/checkbox-on-disabled.png');
 }
 
 .form-sorting-box > li {
