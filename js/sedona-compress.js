@@ -1,0 +1,1 @@
+var form=document.querySelector(".form-booking"),btnSearch=document.querySelector("#init-form-booking");form.classList.add("form-is-hide"),btnSearch.addEventListener("click",function(e){e.preventDefault(),form.classList.toggle("form-is-hide")});

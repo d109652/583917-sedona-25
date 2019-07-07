@@ -27,7 +27,6 @@ a {
 .container {
   position: relative;
   width: 1200px;
-  height: 2762px;
   margin: 0 auto;
  }
 
@@ -251,22 +250,10 @@ a {
 
 .item-of-advantages {
   min-width: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0px auto;
   padding-left: 59px;
   padding-right: 60px;
+  text-align: center;
 }
 
 .item-of-advantages-real-town {
@@ -355,7 +342,7 @@ a {
 
 .item-of-advantages-necessary-things svg {
   margin-top: 60px;
-  margin-bottom: 29px;
+  margin-bottom: 23px;
 }
 
 .item-of-advantages-necessary-things h3 {
@@ -368,7 +355,7 @@ a {
 
 .item-of-advantages-necessary-things-souvenirs svg {
   margin-top: 56px;
-  margin-bottom: 29px;
+  margin-bottom: 23px;
 }
 
 .item-of-advantages-area {
@@ -435,7 +422,6 @@ a {
 .necessary-things li {
   min-width: 33.333%;
   box-sizing: border-box;
-  padding: 10px 0px;
   list-style: none;
 }
 
@@ -479,6 +465,7 @@ a {
 
 .form-booking {
   position:absolute;
+  z-index: 2;
   top: 0px;
   left: 50%;
   margin-left: -284px;
@@ -694,14 +681,32 @@ a {
   height: 58px;
 }
 
+.form-is-hide {
+  display: none;
+}
+
+.map {
+  position: relative;
+}
+
 .map img{display: block;
   margin-bottom: 0;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 
 /* sedona-footer*/
 
 footer {position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
