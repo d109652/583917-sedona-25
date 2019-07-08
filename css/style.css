@@ -14,6 +14,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  background-color: #f2f2f2;
 }
 
 a {
@@ -33,29 +34,29 @@ a {
 .container:before {
   content: '';
   position: absolute;
-  width: 40px;
+  width: 14px;
   height: 100%;
   top: 0;
-  left: -40px;
+  left: -14px;
   background: rgb(242, 242, 242);
   background: -webkit-gradient(linear, right top, left top, color-stop(1%, rgb(219, 219, 219)), color-stop(26%, rgb(242, 242, 242)));
-  background: -webkit-linear-gradient(right, rgb(219, 219, 219) 1%, rgb(242, 242, 242) 26%);
-  background: -o-linear-gradient(right, rgb(219, 219, 219) 1%, rgb(242, 242, 242) 26%);
-  background: linear-gradient(270deg, rgb(219, 219, 219) 1%, rgb(242, 242, 242) 26%);
+  background: -webkit-linear-gradient(right, rgb(219, 219, 219) 1%, rgb(242, 242, 242) 65%);
+  background: -o-linear-gradient(right, rgb(219, 219, 219) 1%, rgb(242, 242, 242) 65%);
+  background: linear-gradient(270deg, rgb(219, 219, 219) 1%, rgb(242, 242, 242) 65%);
  }
 
 .container:after {
   content: '';
   position: absolute;
-  width: 40px;
+  width: 14px;
   height: 100%;
   top: 0;
-  right: -40px;
+  right: -14px;
   background: rgb(242, 242, 242);
   background: -webkit-gradient(linear, left top, right top, color-stop(1%, rgb(219, 219, 219)), color-stop(26%, rgb(242, 242, 242)));
-  background: -webkit-linear-gradient(left, rgb(219, 219, 219) 1%, rgb(242, 242, 242) 26%);
-  background: -o-linear-gradient(left, rgb(219, 219, 219) 1%, rgb(242, 242, 242) 26%);
-  background: linear-gradient(90deg, rgb(219, 219, 219) 1%, rgb(242, 242, 242) 26%);
+  background: -webkit-linear-gradient(left, rgb(219, 219, 219) 1%, rgb(242, 242, 242) 65%);
+  background: -o-linear-gradient(left, rgb(219, 219, 219) 1%, rgb(242, 242, 242) 65%);
+  background: linear-gradient(90deg, rgb(219, 219, 219) 1%, rgb(242, 242, 242) 65%);
 }
 
 .button {
